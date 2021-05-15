@@ -17,12 +17,12 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  if array.any? { |i| i == cheese[0]}
-    cheese
-  elsif array.any? { |i| i == cheese[1]}
-    cheese
-  elsif array.any? { |i| i == cheese[2]}
-    cheese
+  if array.any? { |i| i == cheese_types[0]}
+    cheese_types[0]
+  elsif array.any? { |i| i == cheese_types[1]}
+    cheese_types[1]
+  elsif array.any? { |i| i == cheese_types[2]}
+    cheese_types[2]
   else
     nil  
   end
